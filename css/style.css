@@ -4,7 +4,7 @@ html {
 .container {
     display: flex;
     align-items: center;
-    width: 960px;
+    max-width: 960px;
     margin: auto;
 }
 
@@ -13,12 +13,12 @@ html {
 .header-top {
     width: 100%;
     background-color: black;
-    display: flex;
+    padding: .66rem 0
 }
 .title {
     font-family: helvetica;
     font-size: 1rem;
-    padding: .66rem 1rem;
+    padding-left: 1rem;
     color: white;
 }
 .logo {
@@ -32,23 +32,39 @@ html {
 }
 .header-title {
     background-color: black;
-    margin-top: 9rem;
     width: 20rem;
     display: flex;
     font-family: helvetica;
     font-weight: bold;
     color: white;
     flex-direction: column;
+    padding: 2rem 3rem;
+    position: relative;
+    top: 9rem;
 }
 .header-title span {
     font-size: 1rem;
-    padding-top: 2rem;
-    padding-left: 3rem;
     margin-bottom: .25rem;
+    line-height: 1.3em;
 }
 .header-title h1 {
-    margin-top: .25rem;
-    padding-left: 3rem;
     font-size: 2rem;
-    margin-bottom: 2rem;
+    line-height: 1.2em;
+}
+.header-bottom {
+    background-color: firebrick;
+    padding: .75rem;
+    font-family: helvetica;
+}
+.header-bottom nav {
+    display: block;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav a {
+    color: white;
+    text-decoration-line: none;
 }
