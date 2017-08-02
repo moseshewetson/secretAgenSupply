@@ -126,3 +126,18 @@ html {
     color: white;
     font-family: helvetica;
 }
+
+/* Fiiter*/
+
+footer {
+    background-color: black;
+    margin-top: 4rem;
+    padding: 5rem 0;
+}
+footer .container {
+    align-items: flex-start;
+}
+.copyright {
+    color: white;
+    font-family: helvetica;
+}
