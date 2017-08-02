@@ -115,11 +115,14 @@ html {
 
 .biz-info .container {
     flex-direction: row;
+    justify-content: space-between;
 }
 .info {
-    background-color: black;
     width: 35%;
+}
+.info-title {
+    padding: 1rem 2rem;
+    background-color: black;
     color: white;
     font-family: helvetica;
-    padding: 1rem 2rem;
 }
