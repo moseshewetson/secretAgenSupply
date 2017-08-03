@@ -4,7 +4,7 @@ html {
 .container {
     display: flex;
     align-items: center;
-    width: 960px;
+    max-width: 960px;
     margin: auto;
     flex-direction: column;
 }
@@ -75,6 +75,9 @@ html {
     color: white;
     text-decoration-line: none;
 }
+#menu {
+    display: none;
+}
 
 /* Main Content Section */
 
@@ -113,6 +116,9 @@ html {
 
 /* Business info */
 
+.biz-info {
+    width: 100%;
+}
 .biz-info .container {
     flex-direction: row;
     justify-content: space-between;
@@ -127,7 +133,7 @@ html {
     font-family: helvetica;
 }
 
-/* Fiiter*/
+/* Footer*/
 
 footer {
     background-color: black;
@@ -140,4 +146,84 @@ footer .container {
 .copyright {
     color: white;
     font-family: helvetica;
+}
+
+/* Tablet size */
+
+@media only screen and (max-width: 1024px) {
+    #product-3 {
+        display: none;
+    }
+    html {
+        font-size: 16px;
+    }
+    #menu {
+        display: block;
+    }
+    .nav-list {
+        justify-content: center;
+    }
+    .nav {
+        display: none;
+    }
+    .container {
+        max-width: 670px;
+    }
+    .product {
+        width: 47%;
+    }
+    footer {
+        padding: 3.5rem;
+    }
+}
+
+/* Mobile Size */
+
+@media only screen and (max-width: 470px) {
+    .header-title {
+        width: 100%;
+        padding: 1rem 2rem;
+        top: auto;
+        box-sizing: border-box;
+    }
+    .header-middle .container {
+        height: 100%;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+    .header-title span {
+        font-size: .77rem;
+        font-weight: bold;
+    }
+    .header-title h1 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .header-middle {
+        height: 15rem;
+    }
+    #product-2 {
+        display: none;
+    }
+    .products {
+        justify-content: center;
+    }
+    .product {
+        width: 90%;
+    }
+    .biz-info .container {
+        flex-direction: column;
+    }
+    .info {
+        width: 90%;
+    }
+    #location {
+        margin-bottom: 1.5rem;
+    }
+    footer .container {
+        align-items: center;
+    }
+    .copyright {
+        text-align: center;
+    }
 }
